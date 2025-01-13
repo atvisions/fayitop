@@ -1,0 +1,1911 @@
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Internal Server Error: /about/team/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'fayi.app_lawyer' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 134, in team
+    return render(request, 'about/team.html', {
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'fayi.app_lawyer' doesn't exist")
+"GET /about/team/ HTTP/1.1" 500 275322
+Internal Server Error: /about/testimonials/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'fayi.app_testimonial' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 143, in testimonials
+    total_testimonials = testimonials.count()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 608, in count
+    return self.query.get_count(using=self.db)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 568, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 554, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'fayi.app_testimonial' doesn't exist")
+"GET /about/testimonials/ HTTP/1.1" 500 189648
+Internal Server Error: /admin/app/serviceitempackage/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'fayi.app_servicepackage' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 122, in __init__
+    self.queryset = self.get_queryset(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 503, in get_queryset
+    ) = self.get_filters(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 182, in get_filters
+    spec = field_list_filter_class(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/filters.py", line 175, in create
+    return list_filter_class(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/filters.py", line 188, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/filters.py", line 225, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1009, in get_choices
+    return (blank_choice if include_blank else []) + [
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'fayi.app_servicepackage' doesn't exist")
+"GET /admin/app/serviceitempackage/ HTTP/1.1" 500 260469
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109907
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109779
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109916
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109916
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109916
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109779
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 158, in get_app_config
+    return self.app_configs[app_label]
+KeyError: '服务套餐管理'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 518, in _build_app_dict
+    "name": apps.get_app_config(app_label).verbose_name,
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/apps/registry.py", line 165, in get_app_config
+    raise LookupError(message)
+LookupError: No installed app with label '服务套餐管理'.
+"GET /admin/ HTTP/1.1" 500 109779
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/templatetags/i18n.py", line 403, in do_translate
+    message_string = parser.compile_filter(bits[1])
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: 't' from ''You don't'
+"GET /admin/ HTTP/1.1" 500 252724
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/templatetags/i18n.py", line 403, in do_translate
+    message_string = parser.compile_filter(bits[1])
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: 't' from ''You don't'
+"GET /admin/ HTTP/1.1" 500 252724
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 58, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 254081
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 58, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 253541
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get'
+"GET /services/packages/ HTTP/1.1" 500 249958
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201683
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201683
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201683
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201683
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201683
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 67, in service_packages
+    return render(request, 'services/packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'custom_filters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /services/packages/ HTTP/1.1" 500 201537
+Internal Server Error: /admin/app/familyservicepackage/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'app_familyservicepackage.service_type' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/contrib/admin/options.py", line 2046, in changelist_view
+    media = self.media + formset.media
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/forms/formsets.py", line 521, in media
+    if self.forms:
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/forms/formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/forms/formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/forms/models.py", line 685, in initial_form_count
+    return len(self.get_queryset())
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'app_familyservicepackage.service_type' in 'field list'")
+"GET /admin/app/familyservicepackage/ HTTP/1.1" 500 242257
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: 'item.values|get_item:package.type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 75, in service_packages
+    return render(request, 'service-packages.html', context)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/template/base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'get_item'
+"GET /services/packages/ HTTP/1.1" 500 283866
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type])
+KeyError: 'premium'
+"GET /services/packages/ HTTP/1.1" 500 72785
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type])
+KeyError: 'premium'
+"GET /services/packages/ HTTP/1.1" 500 72785
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813
+Internal Server Error: /services/packages/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/fayi-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in service_packages
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+  File "/Users/liuzhao/Documents/Projects/Fayi/app/views.py", line 34, in <lambda>
+    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+KeyError: 'deluxe'
+"GET /services/packages/ HTTP/1.1" 500 72813

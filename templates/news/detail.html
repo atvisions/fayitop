@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- 面包屑导航 -->
+<div class="bg-gray-50 border-b border-gray-100">
+    <div class="max-w-[1200px] mx-auto px-4">
+        <div class="flex items-center space-x-2 py-4 text-sm">
+            <a href="/" class="text-gray-500 hover:text-[#3BA3BA]">首页</a>
+            <span class="text-gray-400">/</span>
+            <a href="{% url 'news' %}" class="text-gray-500 hover:text-[#3BA3BA]">新闻资讯</a>
+            <span class="text-gray-400">/</span>
+            <a href="{% url 'news' %}?category={{ news.category.id }}" class="text-gray-500 hover:text-[#3BA3BA]">{{ news.category.name }}</a>
+            <span class="text-gray-400">/</span>
+            <span class="text-[#3BA3BA] font-medium">{{ news.title|truncatechars:20 }}</span>
+        </div>
+    </div>
+</div>
+
+<article class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">{{ news.title }}</h1>
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="bg-[#3BA3BA]/10 text-[#3BA3BA] px-2 py-1 rounded-full">{{ news.category.name }}</span>
+                <span class="mx-2">•</span>
+                <time>{{ news.created_at|date:"Y-m-d" }}</time>
+                <span class="mx-2">•</span>
+                <span>{{ news.views }} 阅读</span>
+            </div>
+        </header>
+
+        <div class="prose max-w-none">
+            {{ news.content|safe }}
+        </div>
+    </div>
+</article>
+{% endblock %} 

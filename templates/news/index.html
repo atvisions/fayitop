@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- 新闻头部 -->
+<section class="relative py-16 bg-cover bg-center" style="background-image: url('{% static 'images/bg/bg2.jpg' %}')">
+    <!-- 添加一个半透明的遮罩 -->
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16 relative z-10">
+            <h1 class="text-4xl font-bold text-white mb-4">新闻资讯</h1>
+            <p class="text-xl text-gray-200">了解最新的法律动态和行业资讯</p>
+        </div>
+    </div>
+</section>
+
+<!-- 分类导航 -->
+<section class="border-b bg-white shadow-sm">
+    <div class="container mx-auto px-4">
+        <div class="flex overflow-x-auto py-4 -mx-4 scrollbar-hide">
+            <a href="{% url 'news' %}" 
+               class="px-6 py-2 mx-2 whitespace-nowrap {% if not current_category %}bg-[#3BA3BA] text-white{% else %}text-gray-600 hover:text-[#3BA3BA]{% endif %} rounded-full transition duration-300">
+                全部
+            </a>
+            {% for category in categories %}
+            <a href="{% url 'news' %}?category={{ category.id }}" 
+               class="px-6 py-2 mx-2 whitespace-nowrap {% if current_category == category.id %}bg-[#3BA3BA] text-white{% else %}text-gray-600 hover:text-[#3BA3BA]{% endif %} rounded-full transition duration-300">
+                {{ category.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- 新闻列表 -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-[1200px] mx-auto px-4">
+        <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for news in news_list %}
+            <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="{{ news.thumbnail.url }}" alt="{{ news.title }}" class="object-cover w-full h-full">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-4">
+                        {% for category in categories %}
+                            {% if category.id == news.category %}
+                                <span class="bg-[#3BA3BA]/10 text-[#3BA3BA] px-2 py-1 rounded-full text-xs">{{ category.name }}</span>
+                            {% endif %}
+                        {% endfor %}
+                        <span class="mx-2">•</span>
+                        <time>{{ news.date }}</time>
+                        <span class="mx-2">•</span>
+                        <span>{{ news.views }} 阅读</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600">
+                        <a href="{% url 'news_detail' news_id=news.id %}">{{ news.title }}</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">{{ news.summary }}</p>
+                    <a href="{% url 'news_detail' news_id=news.id %}" class="text-[#3BA3BA] hover:text-[#264466] font-medium inline-flex items-center">
+                        阅读更多
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        
+        <!-- 加载更多按钮 -->
+        {% if has_next %}
+        <div class="text-center mt-12">
+            <button id="load-more" 
+                    data-page="{{ next_page }}"
+                    data-category="{{ current_category|default:'' }}"
+                    class="inline-flex items-center px-6 py-3 border border-[#3BA3BA] text-[#3BA3BA] rounded-lg hover:bg-[#3BA3BA] hover:text-white transition-colors">
+                加载更多
+                <svg class="w-5 h-5 ml-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('load-more');
+    const newsContainer = document.getElementById('news-container');
+    
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            const page = this.dataset.page;
+            const category = this.dataset.category;
+            const url = `{% url 'news' %}?page=${page}${category ? '&category=' + category : ''}`;
+            
+            // 显示加载状态
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                加载中...
+            `;
+            
+            fetch(url, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 添加新的新闻项
+                data.news.forEach(news => {
+                    const newsItem = `
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <a href="{% url 'news_detail' 0 %}".replace('0', news.id)>
+                                <div class="relative h-48">
+                                    <img src="${news.thumbnail}" alt="${news.title}" 
+                                         class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">${news.title}</h3>
+                                    <p class="text-gray-600 mb-4">${news.summary}</p>
+                                    <div class="flex items-center text-sm text-gray-500">
+                                        <span class="mr-4">${news.publish_date}</span>
+                                        <span>浏览 ${news.views}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `;
+                    newsContainer.insertAdjacentHTML('beforeend', newsItem);
+                });
+                
+                // 更新或移除加载更多按钮
+                if (data.has_next) {
+                    loadMoreBtn.dataset.page = data.next_page;
+                    loadMoreBtn.disabled = false;
+                    loadMoreBtn.innerHTML = `
+                        加载更多
+                        <svg class="w-5 h-5 ml-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    `;
+                } else {
+                    loadMoreBtn.remove();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                loadMoreBtn.disabled = false;
+                loadMoreBtn.innerHTML = '加载失败，请重试';
+            });
+        });
+    }
+});
+</script>
+{% endblock %} 

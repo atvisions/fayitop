@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<section class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[#3BA3BA]/5 mix-blend-multiply"></div>
+    <div class="max-w-[1200px] mx-auto px-4 relative">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
+                服务套餐
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">服务套餐详情</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">为不同需求提供专业的法律服务方案</p>
+        </div>
+
+        <!-- 家庭服务套餐 -->
+        <div class="bg-white rounded-xl shadow-sm mb-16 overflow-hidden border border-gray-100">
+            <div class="px-8 py-4 border-b border-gray-100 flex items-center">
+                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">家庭服务</h3>
+            </div>
+            <div class="p-6">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">服务内容</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">服务说明</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">价格</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition-colors duration-150">
+                            <td class="px-6 py-4">享受365天，天天法务咨询</td>
+                            <td class="px-6 py-4">无限制咨询</td>
+                            <td class="px-6 py-4">
+                                <span class="text-lg font-semibold text-[#3BA3BA]">¥999</span>
+                                <span class="text-gray-500 text-sm">/年</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 企业服务套餐对比 -->
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <div class="px-8 py-4 border-b border-gray-100 flex items-center">
+                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">企业服务套餐对比</h3>
+            </div>
+            <div class="p-6 overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr>
+                            <th class="w-[15%] px-3 py-3 text-left text-sm font-semibold text-gray-900">类型</th>
+                            <th class="w-[35%] px-3 py-3 text-left text-sm font-semibold text-gray-900">服务内容</th>
+                            <th class="w-[30%] px-3 py-3 text-left text-sm font-semibold text-gray-900">服务说明</th>
+                            <th class="w-[6%] px-3 py-3 text-center text-sm font-semibold text-gray-900">标准版<br>¥3800/年</th>
+                            <th class="w-[6%] px-3 py-3 text-center text-sm font-semibold text-gray-900">高级版<br>¥5800/年</th>
+                            <th class="w-[6%] px-3 py-3 text-center text-sm font-semibold text-gray-900">豪华版<br>¥8800/年</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        {% for service_type, items in enterprise_services.items %}
+                            {% for item in items %}
+                                <tr class="group">
+                                    {% if forloop.first %}
+                                    <td class="px-6 py-4 align-top font-medium w-[15%] whitespace-nowrap" rowspan="{{ items|length }}">{{ service_type.name }}</td>
+                                    {% endif %}
+                                    <td class="px-6 py-4 w-[35%] group-hover:bg-gray-50 transition-colors duration-150">
+                                        <div class="space-y-2 text-sm">
+                                            {% with items=item.title|split_lines %}
+                                                {% for line in items %}
+                                                    {% if line|strip %}
+                                                        <div class="flex gap-2">
+                                                            {% if not forloop.first %}<div class="w-4"></div>{% endif %}
+                                                            <div class="flex-1 text-gray-700">{{ line|safe }}</div>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endwith %}
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 w-[30%] group-hover:bg-gray-50 transition-colors duration-150">
+                                        <div class="space-y-2">
+                                            {% with items=item.description|split_lines %}
+                                                {% for line in items %}
+                                                    {% if line|strip %}
+                                                        <div class="flex gap-2">
+                                                            <div class="flex-1">{{ line|safe }}</div>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endwith %}
+                                        </div>
+                                    </td>
+                                    {% for package in enterprise_packages %}
+                                    <td class="px-6 py-4 text-center w-[6%] group-hover:bg-gray-50 transition-colors duration-150">
+                                        {% if item.values|get_item:package.type == '支持' %}
+                                        <svg class="w-5 h-5 text-[#3BA3BA] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        {% else %}
+                                        <span class="inline-flex items-center justify-center text-gray-300">-</span>
+                                        {% endif %}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 咨询按钮 -->
+        <div class="text-center mt-12">
+            <a href="{% url 'contact' %}" 
+               class="inline-flex items-center px-8 py-3 text-base font-medium rounded-lg text-white bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/90 hover:from-[#264466] hover:to-[#264466]/90 transition-all duration-300 shadow-sm hover:shadow">
+                立即咨询
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* 容器响应式处理 */
+    @media (max-width: 1280px) {
+        .max-w-[1200px] {
+            @apply max-w-full;
+        }
+    }
+
+    /* 自定义表格样式 */
+    .table-container {
+        @apply shadow-sm rounded-xl overflow-hidden border border-gray-100;
+    }
+    
+    table {
+        @apply w-full text-sm text-left text-gray-500;
+    }
+    
+    th {
+        @apply px-6 py-3 font-semibold bg-gray-50 text-gray-600;
+    }
+    
+    td {
+        @apply px-6 py-4;
+    }
+
+    /* 响应式处理 */
+    @media (max-width: 1024px) {
+        .table-wrapper {
+            @apply overflow-x-auto;
+        }
+        
+        table {
+            @apply min-w-max;
+        }
+    }
+</style>
+{% endblock %} 

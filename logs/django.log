@@ -1,0 +1,15 @@
+INFO 2025-01-13 10:58:07,415 autoreload 62899 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 10:58:15,771 autoreload 62899 8632711232 /Users/liuzhao/Documents/Projects/Fayi/config/__init__.py changed, reloading.
+INFO 2025-01-13 10:58:16,242 autoreload 62973 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 10:59:08,218 autoreload 62973 8632711232 /Users/liuzhao/Documents/Projects/Fayi/config/urls.py changed, reloading.
+INFO 2025-01-13 10:59:08,650 autoreload 64175 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 10:59:18,082 autoreload 64175 8632711232 /Users/liuzhao/Documents/Projects/Fayi/config/urls.py changed, reloading.
+INFO 2025-01-13 10:59:18,468 autoreload 64206 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 10:59:43,452 autoreload 64206 8632711232 /Users/liuzhao/Documents/Projects/Fayi/app/views.py changed, reloading.
+INFO 2025-01-13 10:59:43,833 autoreload 64272 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 10:59:51,209 autoreload 64272 8632711232 /Users/liuzhao/Documents/Projects/Fayi/app/views.py changed, reloading.
+INFO 2025-01-13 10:59:51,604 autoreload 64301 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 11:00:29,059 autoreload 65046 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 11:02:01,205 autoreload 65046 8632711232 /Users/liuzhao/Documents/Projects/Fayi/config/settings.py changed, reloading.
+INFO 2025-01-13 11:02:01,719 autoreload 65231 8632711232 Watching for file changes with StatReloader
+INFO 2025-01-13 11:02:11,171 autoreload 65231 8632711232 /Users/liuzhao/Documents/Projects/Fayi/config/settings.py changed, reloading.

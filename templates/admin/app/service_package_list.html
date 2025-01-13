@@ -1,0 +1,103 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_list %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static "admin/css/changelists.css" %}">
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="module">
+        <h2>服务套餐管理</h2>
+        <div class="description">
+            <p>在这里管理所有与服务套餐相关的内容：</p>
+        </div>
+        <table>
+            <tr>
+                <th>模块</th>
+                <th>说明</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>家庭服务套餐</td>
+                <td>管理家庭法律服务套餐内容</td>
+                <td>
+                    <a href="{% url 'admin:app_familyservicepackage_changelist' %}" class="button">管理</a>
+                </td>
+            </tr>
+            <tr>
+                <td>企业服务套餐</td>
+                <td>管理企业法律服务套餐内容</td>
+                <td>
+                    <a href="{% url 'admin:app_enterpriseservicepackage_changelist' %}" class="button">管理</a>
+                </td>
+            </tr>
+            <tr>
+                <td>企业服务类型</td>
+                <td>管理企业服务的分类</td>
+                <td>
+                    <a href="{% url 'admin:app_enterpriseservicetype_changelist' %}" class="button">管理</a>
+                </td>
+            </tr>
+            <tr>
+                <td>企业服务项目</td>
+                <td>管理企业服务的具体项目</td>
+                <td>
+                    <a href="{% url 'admin:app_enterpriseserviceitem_changelist' %}" class="button">管理</a>
+                </td>
+            </tr>
+            <tr>
+                <td>企业套餐服务内容</td>
+                <td>管理企业服务套餐的具体内容</td>
+                <td>
+                    <a href="{% url 'admin:app_enterpriseservicevalue_changelist' %}" class="button">管理</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<style>
+.module {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.module h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.description {
+    margin: 20px 0;
+    color: #666;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+.button {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #79aec8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.button:hover {
+    background: #417690;
+}
+</style>
+{% endblock %} 
