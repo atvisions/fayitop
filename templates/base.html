@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>{% block title %}法翼法务{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -31,11 +33,13 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo和网站名称 -->
                 <div class="flex items-center space-x-3">
-                    <img src="/static/images/logo.png" alt="法翼法务" class="h-10 w-auto">
-                    <div class="flex flex-col">
-                        <span class="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">法翼法务</span>
-                        <span class="text-xs text-gray-500">专业法律服务平台</span>
-                    </div>
+                    <a href="{% url 'home' %}" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+                        <img src="/static/images/logo.png" alt="法翼法务" class="h-10 w-auto">
+                        <div class="flex flex-col">
+                            <span class="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">法翼法务</span>
+                            <span class="text-xs text-gray-500">专业法律服务平台</span>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- 移动端菜单按钮 -->
@@ -154,21 +158,17 @@
                     </a>
                     
                     <!-- 移动端服务菜单 -->
-                    <div class="relative" x-data="{ open: false }">
-                        <button @click="open = !open" class="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#3BA3BA] hover:bg-[#3BA3BA]/10">
-                            <span>服务</span>
-                            <svg class="h-5 w-5 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div x-show="open" class="mt-2 pl-4">
-                            <a href="{% url 'services' %}#legal" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#3BA3BA] hover:bg-[#3BA3BA]/10">法律咨询</a>
-                            <a href="{% url 'services' %}#labor" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#3BA3BA] hover:bg-[#3BA3BA]/10">劳资合规</a>
-                            <a href="{% url 'services' %}#contract" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#3BA3BA] hover:bg-[#3BA3BA]/10">合约优化</a>
-                        </div>
-                    </div>
+                    <a href="{% url 'services' %}" 
+                        class="block px-3 py-2 rounded-md text-base font-medium
+                        {% if request.path == '/services/' %}
+                            text-[#3BA3BA] bg-[#3BA3BA]/10
+                        {% else %}
+                            text-gray-700 hover:text-[#3BA3BA] hover:bg-[#3BA3BA]/10
+                        {% endif %}">
+                        服务内容
+                    </a>
                     
-                    <a href="{% url 'service_packages' %}" 
+                    <a href="{% url 'service_packages' %}"
                         class="block px-3 py-2 rounded-md text-base font-medium
                         {% if request.path == '/services/packages/' %}
                             text-[#3BA3BA] bg-[#3BA3BA]/10
@@ -342,19 +342,21 @@
         </div>
     </footer>
 
-    <!-- 移动端菜单控制脚本 -->
     <script>
+        // 移动端菜单控制
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileMenu = document.querySelector('.mobile-menu');
             const menuIcon = document.querySelector('.menu-icon');
             const closeIcon = document.querySelector('.close-icon');
 
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-                menuIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-            });
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
         });
     </script>
 

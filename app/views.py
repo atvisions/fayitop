@@ -30,8 +30,12 @@ def service_packages(request):
         is_active=True
     ))
     # 自定义排序：标准版、高级版、豪华版
-    package_order = {'standard': 1, 'deluxe': 2, 'premium': 3}
-    enterprise_packages.sort(key=lambda x: package_order[x.type.lower()])
+    package_order = {
+        'standard': 0,  # 标准版
+        'premium': 1,   # 高级版
+        'deluxe': 2,    # 豪华版
+    }
+    enterprise_packages.sort(key=lambda x: package_order.get(x.type.lower(), 999))
     
     # 初始化企业服务数据字典
     enterprise_services = {}
@@ -75,7 +79,7 @@ def service_packages(request):
         'enterprise_services': enterprise_services,
     }
     
-    return render(request, 'service-packages.html', context)
+    return render(request, 'services/packages.html', context)
 
 def home(request):
     hero_slides = [

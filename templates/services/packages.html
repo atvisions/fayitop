@@ -3,7 +3,6 @@
 {% load custom_filters %}
 
 {% block content %}
-<!-- 页面头部 -->
 <section class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
     <div class="absolute inset-0 bg-[#3BA3BA]/5 mix-blend-multiply"></div>
     <div class="max-w-[1200px] mx-auto px-4 relative">
@@ -16,76 +15,113 @@
         </div>
 
         <!-- 家庭服务套餐 -->
-        <div class="mb-16">
-            <h3 class="text-xl font-bold text-gray-900 mb-8 text-center">家庭服务套餐</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {% for package in family_packages %}
-                <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                    <div class="p-6">
-                        <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
-                            {{ package.service_type }}
-                        </div>
-                        <h4 class="text-lg font-bold text-gray-900 mb-3">{{ package.title }}</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">{{ package.description }}</p>
-                        <div class="text-xl font-bold text-[#3BA3BA]">¥{{ package.price }}</div>
-                    </div>
+        <div class="bg-white rounded-xl shadow-sm mb-16 overflow-hidden border border-gray-100">
+            <div class="px-8 py-4 border-b border-gray-100 flex items-center">
+                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
                 </div>
-                {% endfor %}
+                <h3 class="text-xl font-bold text-gray-900">家庭服务</h3>
+            </div>
+            <div class="p-6">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">服务内容</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">服务说明</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-gray-600 bg-gray-50">价格</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        {% for package in family_packages %}
+                        <tr class="hover:bg-gray-50 transition-colors duration-150">
+                            <td class="px-6 py-4">{{ package.title }}</td>
+                            <td class="px-6 py-4">{{ package.description }}</td>
+                            <td class="px-6 py-4">
+                                <span class="text-lg font-semibold text-[#3BA3BA]">¥{{ package.price }}</span>
+                                <span class="text-gray-500 text-sm">/年</span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
 
         <!-- 企业服务套餐 -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <div class="p-8 bg-gradient-to-br from-[#3BA3BA]/5 to-transparent">
-                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">企业服务套餐</h3>
+            <div class="px-8 py-4 border-b border-gray-100 flex items-center">
+                <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">企业服务</h3>
             </div>
-            <div class="overflow-x-auto">
-                <table class="w-full">
+            <div class="p-6 overflow-x-auto">
+                <table class="w-full table-fixed divide-y divide-gray-200">
+                    <colgroup>
+                        <col class="w-[400px]">
+                        <col class="w-[180px]">
+                        <col class="w-[180px]">
+                        {% for package in enterprise_packages %}
+                        <col class="w-[80px]">
+                        {% endfor %}
+                    </colgroup>
                     <thead>
-                        <tr class="border-b border-gray-100">
-                            <th class="py-4 px-6 text-left font-medium text-gray-500 w-1/4">服务类型</th>
-                            <th class="py-4 px-6 text-left font-medium text-gray-500 w-1/4">服务内容</th>
-                            <th class="py-4 px-6 text-left font-medium text-gray-500 w-1/4">服务说明</th>
+                        <tr>
+                            <th class="px-3 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-50">类型</th>
+                            <th class="px-3 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-50">服务内容</th>
+                            <th class="px-3 py-3 text-left text-sm font-semibold text-gray-900 bg-gray-50">服务说明</th>
                             {% for package in enterprise_packages %}
-                            <th class="py-4 px-6 text-center font-medium text-gray-500">
-                                <div class="mb-2 text-base">{{ package.get_type_display }}</div>
-                                <div class="text-[#3BA3BA] font-bold text-lg">¥{{ package.price }}</div>
+                            <th class="px-3 py-3 text-center text-sm font-semibold text-gray-900 bg-gray-50">
+                                {{ package.get_type_display }}<br>¥{{ package.price|floatformat:2 }}/年
                             </th>
                             {% endfor %}
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="divide-y divide-gray-200">
                         {% for type, items in enterprise_services.items %}
-                        {% for item in items %}
-                        <tr class="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
-                            {% if forloop.first %}
-                            <td class="py-4 px-6 align-top" rowspan="{{ items|length }}">
-                                <div class="font-medium text-gray-900">{{ type.name }}</div>
-                            </td>
-                            {% endif %}
-                            <td class="py-4 px-6">
-                                <div class="font-medium text-gray-900">{{ item.title }}</div>
-                            </td>
-                            <td class="py-4 px-6">
-                                <div class="text-gray-600 text-sm leading-relaxed">{{ item.description }}</div>
-                            </td>
-                            {% for package in enterprise_packages %}
-                            <td class="py-4 px-6 text-center">
-                                {% if package in item.supported_packages.all %}
-                                <svg class="w-5 h-5 text-[#3BA3BA] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                {% else %}
-                                <span class="inline-flex items-center justify-center text-gray-300">-</span>
-                                {% endif %}
-                            </td>
+                            {% for item in items %}
+                                <tr class="group">
+                                    {% if forloop.first %}
+                                    <td class="px-6 py-4 align-top font-medium whitespace-nowrap" rowspan="{{ items|length }}">{{ type.name }}</td>
+                                    {% endif %}
+                                    <td class="px-6 py-4 group-hover:bg-gray-50 transition-colors duration-150">
+                                        <div class="text-sm text-gray-700 whitespace-pre-line">{{ item.title|linebreaks }}</div>
+                                    </td>
+                                    <td class="px-6 py-4 group-hover:bg-gray-50 transition-colors duration-150">
+                                        <div class="text-xs text-gray-600 whitespace-pre-line">{{ item.description|linebreaks }}</div>
+                                    </td>
+                                    {% for package in enterprise_packages %}
+                                    <td class="px-6 py-4 text-center group-hover:bg-gray-50 transition-colors duration-150">
+                                        {% if item.values|get_item:package.type == '支持' %}
+                                        <svg class="w-5 h-5 text-[#3BA3BA] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        {% else %}
+                                        <span class="inline-flex items-center justify-center text-gray-300">-</span>
+                                        {% endif %}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
                             {% endfor %}
-                        </tr>
-                        {% endfor %}
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
+        </div>
+
+        <!-- 咨询按钮 -->
+        <div class="text-center mt-12">
+            <a href="{% url 'contact' %}" 
+               class="inline-flex items-center px-8 py-3 text-base font-medium rounded-lg text-white bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/90 hover:from-[#264466] hover:to-[#264466]/90 transition-all duration-300 shadow-sm hover:shadow">
+                立即咨询
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
     </div>
 </section>

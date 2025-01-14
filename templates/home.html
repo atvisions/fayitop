@@ -4,7 +4,7 @@
 {% block content %}
 <!-- 头部轮播 -->
 <section class="bg-gray-50 relative overflow-hidden">
-    <div class="swiper-container min-h-[800px] overflow-hidden">
+    <div class="swiper-container min-h-[400px] md:min-h-[800px] overflow-hidden">
         <div class="swiper-wrapper h-full">
             {% for slide in hero_slides %}
             <div class="swiper-slide h-full relative">
@@ -14,13 +14,13 @@
                     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                 </div>
                 <!-- 内容 -->
-                <div class="container mx-auto px-4 flex items-center justify-center h-full min-h-[800px] relative z-10">
+                <div class="container mx-auto px-4 flex items-center justify-center h-full min-h-[400px] md:min-h-[800px] relative z-10">
                     <div class="max-w-4xl mx-auto text-center">
-                        <h1 class="text-5xl font-bold text-white mb-8">{{ slide.title }}</h1>
-                        <p class="text-2xl text-gray-200 mb-12">{{ slide.description }}</p>
+                        <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-8">{{ slide.title }}</h1>
+                        <p class="text-lg md:text-2xl text-gray-200 mb-8 md:mb-12">{{ slide.description }}</p>
                         <a href="{% url slide.button_url %}" 
-                           class="bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/90 text-white px-12 py-4 rounded-lg 
-                           hover:from-[#264466] hover:to-[#264466]/90 transition-all duration-300 text-lg 
+                           class="bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/90 text-white px-6 md:px-12 py-3 md:py-4 rounded-lg 
+                           hover:from-[#264466] hover:to-[#264466]/90 transition-all duration-300 text-base md:text-lg 
                            transform hover:-translate-y-0.5 hover:shadow-lg">
                             {{ slide.button_text }}
                         </a>
@@ -36,7 +36,12 @@
 <style>
     .swiper-container {
         width: 100%;
-        height: 800px !important;  /* 强制设置高度 */
+        height: 400px !important;  /* 移动端高度 */
+    }
+    @media (min-width: 768px) {
+        .swiper-container {
+            height: 800px !important;  /* 桌面端高度 */
+        }
     }
     .swiper-wrapper {
         height: 100% !important;
@@ -57,18 +62,29 @@
     }
     .swiper-button-next,
     .swiper-button-prev {
-        width: 48px !important;
-        height: 48px !important;
+        width: 36px !important;
+        height: 36px !important;
         background-color: #3BA3BA !important;
         border-radius: 50% !important;
         color: #fff !important;
     }
-
+    @media (min-width: 768px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 48px !important;
+            height: 48px !important;
+        }
+    }
     .swiper-button-next:after,
     .swiper-button-prev:after {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
-
+    @media (min-width: 768px) {
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px !important;
+        }
+    }
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
         background-color: #2c8a9e !important;
@@ -98,83 +114,201 @@
 </script>
 
 <!-- 品牌优势 -->
-<section class="py-20 bg-white">
-    <div class="max-w-[1200px] mx-auto px-4">
-        <div class="max-w-3xl mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">品牌优势</h2>
-            <p class="text-xl text-gray-600">专业的法律服务团队，为您提供全方位的法律支持</p>
+<section class="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[#3BA3BA]/5 mix-blend-multiply"></div>
+    <div class="max-w-[1200px] mx-auto px-4 relative">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
+                品牌优势
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">为什么选择我们</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">专业的法律服务团队，为您提供全方位的法律支持</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <!-- 商业法律服务 -->
-            <div class="flex flex-col">
-                <div class="w-16 h-16 mb-6">
-                    <svg class="w-full h-full text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">商业法律服务</h3>
-                <p class="text-gray-600 leading-relaxed">专业的商业法律服务团队，为企业提供全方位的法律支持和风险防控</p>
-            </div>
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <!-- 信任保障 -->
-            <div class="flex flex-col">
-                <div class="w-16 h-16 mb-6">
-                    <svg class="w-full h-full text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-[#3BA3BA]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-6 h-6 text-[#3BA3BA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">信任保障</h3>
-                <p class="text-gray-600 leading-relaxed">15年专业服务经验，值得信赖的法律顾问团队</p>
+                <p class="text-gray-600">15年专业服务经验，值得信赖的法律顾问团队</p>
             </div>
 
             <!-- 专业团队 -->
-            <div class="flex flex-col">
-                <div class="w-16 h-16 mb-6">
-                    <svg class="w-full h-full text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-[#3BA3BA]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-6 h-6 text-[#3BA3BA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">专业团队</h3>
-                <p class="text-gray-600 leading-relaxed">资深律师团队，覆盖各类法律专业领域</p>
+                <p class="text-gray-600">资深律师团队，覆盖各类法律专业领域</p>
             </div>
 
             <!-- 高效服务 -->
-            <div class="flex flex-col">
-                <div class="w-16 h-16 mb-6">
-                    <svg class="w-full h-full text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-[#3BA3BA]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-6 h-6 text-[#3BA3BA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">高效服务</h3>
-                <p class="text-gray-600 leading-relaxed">快速响应机制，为您提供及时高效的法律服务</p>
+                <p class="text-gray-600">快速响应机制，为您提供及时高效的法律服务</p>
             </div>
-        </div>
 
-        <!-- 数据统计 -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mt-20">
-            <div>
-                <span class="block text-4xl font-bold text-[#3BA3BA] mb-2">2,580+</span>
-                <span class="text-gray-600">成功案例</span>
-            </div>
-            <div>
-                <span class="block text-4xl font-bold text-[#3BA3BA] mb-2">1,500+</span>
-                <span class="text-gray-600">信赖客户</span>
-            </div>
-            <div>
-                <span class="block text-4xl font-bold text-[#3BA3BA] mb-2">12+</span>
-                <span class="text-gray-600">执业领域</span>
-            </div>
-            <div>
-                <span class="block text-4xl font-bold text-[#3BA3BA] mb-2">95%</span>
-                <span class="text-gray-600">胜诉率</span>
+            <!-- 全面保障 -->
+            <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div class="w-12 h-12 bg-[#3BA3BA]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-6 h-6 text-[#3BA3BA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">全面保障</h3>
+                <p class="text-gray-600">提供全方位的法律服务，保障您的合法权益</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- 数据统计 -->
+<section class="py-16 md:py-24 bg-gradient-to-br from-[#3BA3BA]/5 via-[#3BA3BA]/3 to-white">
+    <div class="max-w-[1200px] mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/60 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 ring-1 ring-gray-200/50">
+                    <div class="flex flex-col items-center">
+                        <span class="counter-value block text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-target="2580">0</span>
+                        <span class="text-[#3BA3BA] font-bold text-xl mb-1">+</span>
+                        <span class="text-gray-600">成功案例</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/60 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 ring-1 ring-gray-200/50">
+                    <div class="flex flex-col items-center">
+                        <span class="counter-value block text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-target="1500">0</span>
+                        <span class="text-[#3BA3BA] font-bold text-xl mb-1">+</span>
+                        <span class="text-gray-600">信赖客户</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/60 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 ring-1 ring-gray-200/50">
+                    <div class="flex flex-col items-center">
+                        <span class="counter-value block text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-target="12">0</span>
+                        <span class="text-[#3BA3BA] font-bold text-xl mb-1">+</span>
+                        <span class="text-gray-600">执业领域</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-[#3BA3BA] to-[#3BA3BA]/60 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 ring-1 ring-gray-200/50">
+                    <div class="flex flex-col items-center">
+                        <span class="counter-value block text-4xl md:text-5xl font-bold text-gray-900 mb-2" data-target="95">0</span>
+                        <span class="text-[#3BA3BA] font-bold text-xl mb-1">%</span>
+                        <span class="text-gray-600">胜诉率</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// 数字滚动动画
+function animateCounter() {
+    const counters = document.querySelectorAll('.counter-value');
+    const speed = 200; // 动画持续时间（越小越快）
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const increment = target / speed;
+
+        const updateCount = () => {
+            const count = +counter.innerText;
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+}
+
+// 当元素进入视口时触发动画
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter();
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+// 监听数据统计区域
+document.addEventListener('DOMContentLoaded', function() {
+    const counterSection = document.querySelector('.counter-value').parentElement.parentElement.parentElement;
+    observer.observe(counterSection);
+});
+</script>
+
+<style>
+.bg-grid-slate-100 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(51 65 85 / 0.02)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.service-swiper', {
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+        loop: true,
+        speed: 500,
+        centeredSlides: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
+            768: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            },
+            1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+            },
+            1280: {
+                slidesPerView: 5,
+                centeredSlides: false,
+            }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+});
+</script>
+
 <!-- 服务内容 -->
-<section class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+<section class="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
     <div class="absolute inset-0 bg-[#3BA3BA]/5 mix-blend-multiply"></div>
     <div class="max-w-[1200px] mx-auto px-4 relative">
         <!-- 标题部分 -->
@@ -373,11 +507,29 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     new Swiper('.service-swiper', {
-        slidesPerView: 5,
+        slidesPerView: 1.2,
         spaceBetween: 16,
         loop: true,
         speed: 500,
-        slidesPerGroup: 1,
+        centeredSlides: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
+            768: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            },
+            1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+            },
+            1280: {
+                slidesPerView: 5,
+                centeredSlides: false,
+            }
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -387,9 +539,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- 成功案例 -->
-<section class="py-24 bg-white">
+<section class="py-20 md:py-32 bg-white">
     <div class="max-w-[1200px] mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8 md:mb-16">
             <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
                 成功案例
             </div>
@@ -397,7 +549,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="text-gray-600 max-w-2xl mx-auto">我们用专业的服务帮助客户解决各类法律难题</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- 商业纠纷案例 -->
             <div class="group">
                 <div class="relative h-[400px] rounded-xl overflow-hidden mb-6">
@@ -495,9 +647,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <!-- 服务套餐 -->
-<section class="py-24 bg-white">
+<section class="py-20 md:py-32 bg-white">
     <div class="max-w-[1200px] mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8 md:mb-16">
             <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
                 服务套餐
             </div>
@@ -505,7 +657,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="text-gray-600 max-w-2xl mx-auto">为不同规模的企业提供专业的法律服务解决方案</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- 基础套餐 -->
             <div class="bg-white rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300">
                 <div class="relative h-48">
@@ -642,10 +794,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <!-- 用户好评 -->
-<section class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-    <div class="absolute inset-0 bg-[#3BA3BA]/5 mix-blend-multiply"></div>
-    <div class="max-w-[1200px] mx-auto px-4 relative">
-        <div class="text-center mb-16">
+<section class="py-20 md:py-32 bg-white">
+    <div class="max-w-[1200px] mx-auto px-4">
+        <div class="text-center mb-8 md:mb-16">
             <div class="inline-flex items-center justify-center bg-[#3BA3BA]/10 rounded-full px-3 py-1 text-sm font-medium text-[#3BA3BA] mb-4">
                 用户好评
             </div>
@@ -653,7 +804,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="text-gray-600 max-w-2xl mx-auto">听听我们客户的心声</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {% for testimonial in testimonials %}
             <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
                 <div class="flex text-yellow-400 mb-6">
